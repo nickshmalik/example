@@ -1,0 +1,62 @@
+[
+    {
+        "customer": "Customer0",
+        "first name": "Rachel",
+        "last name": "Chow",
+        "email": "Rachel@gmail.com"
+    },
+    {
+        "customer": "Customer1",
+        "first name": "Tori",
+        "last name": "Hardcastle",
+        "email": "Tori@gmail.com"
+    },
+    {
+        "customer": "Customer2",
+        "first name": "Denise",
+        "last name": "Jackson",
+        "email": "Denise@gmail.com"
+    },
+    {
+        "customer": "Customer3",
+        "first name": "Della",
+        "last name": "Laurent",
+        "email": "Della@gmail.com"
+    },
+    {
+        "customer": "Customer4",
+        "first name": "Matthew",
+        "last name": "Goldberg",
+        "email": "Matthew@gmail.com"
+    },
+    {
+        "customer": "Customer5",
+        "first name": "Ella",
+        "last name": "Rodriguez",
+        "email": "Ella@gmail.com"
+    },
+    {
+        "customer": "Customer6",
+        "first name": "Newton",
+        "last name": "May",
+        "email": "Newton@gmail.com"
+    },
+    {
+        "customer": "Customer7",
+        "first name": "Kelly",
+        "last name": "Ward",
+        "email": "Kelly@gmail.com"
+    },
+    {
+        "customer": "Customer8",
+        "first name": "Hiroko",
+        "last name": "Figaro",
+        "email": "Hiroko@gmail.com"
+    },
+    {
+        "customer": "Customer9",
+        "first name": "Alice",
+        "last name": "Hernandez",
+        "email": "Alice@gmail.com"
+    }
+]

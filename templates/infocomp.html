@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+{% load mathfilters %}
+
+<div class="container">
+
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">{{infocompurl}}</h1>
+  <p class="lead">
+  {% for tiket in tiket %}
+  	   {% if tiket.proc <= 30 %}
+	   <p class="text-success">NO PROBLEM</p>
+	   {% endif %}
+	   {% if tiket.proc >= 30 %}
+	   <p class="text-danger">PROBLEM</p>
+	   <a href="{% url 'sendmail' tiket.customer__company %}">Сообщить о проблеме </a>
+	   {% endif %}
+  {% endfor %}
+  <ul class="list-group list-group-flush">
+  {% for cont  in cont %}
+	<li class="list-group-item">Firstname: {{cont.firstname}}</li>
+	<li class="list-group-item">Lastname: {{cont.lastname}}</li>
+	<li class="list-group-item">email: {{cont.email}}</li>
+  {% endfor %}
+  </ul>
+  </p>
+</div>
+
+<div id="chart_div"></div>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Кол-во</th>
+      <th class="text-center">Red</th>
+      <th class="text-center">Green</th>
+      <th class="text-center">Gray</th>
+	  <th class="text-center">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for infocomp in infocomp %}
+	<tr>
+      <th>{{ infocomp.license }}</th>
+      <td><p class="text-danger">{{ infocomp.red }}</p></td>
+      <td><p class="text-success">{{ infocomp.green }}</p></td>
+      <td><p class="text-secondary">{{ infocomp.grey }}</p></td>
+	  <td>{{ infocomp.date }}</td>
+    </tr>
+	{% endfor %}
+  </tbody>
+</table>
+                    
+</div>								
+																		
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+       
+  <script>
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+		{% for infocomp in infocomp %}
+          ['Дата', 'Red', 'Green', 'Gray'],
+          ['{{infocomp.date|date:"d.m.y"}}' , {{ infocomp.red }}, {{ infocomp.green }}, {{infocomp.grey}}],
+		  {% endfor %}
+        ]);
+
+        var options = {
+          chart: {
+            title: '',
+            subtitle: 'Динамика за последнии 7 дней',
+          },
+          bars: 'vertical',
+          vAxis: {format: 'decimal'},
+          height: 400,
+          colors: ['#FF0000', '#008000', '#808080']
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('chart_div'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+
+      }
+   
+   
+  </script>
+					
+
+{% endblock %}

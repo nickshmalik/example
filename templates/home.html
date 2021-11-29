@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+{% load mathfilters %}
+
+
+{% regroup itm|dictsort:"customer__company" by customer__company as customer_list %}
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Заказчик</th>
+      <th scope="col">Имя</th>
+      <th scope="col">Фамилия</th>
+      <th scope="col">E-Mail</th>
+	  <th scope="col">Статусы машин</th>
+	  <th scope="col">Mark</th>
+    </tr>
+  </thead>
+  <tbody>
+  	{% for customer in customer_list %}
+	{% for item in customer.list %}
+    <tr>
+      <th scope="row"><a href="{% url 'infocomp' item.customer__company %}" class="text-info">{{item.customer__company}}</a></th>
+      <td>{{item.customer__firstname}}</td>
+      <td>{{item.customer__lastname}}</td>
+      <td>{{item.customer__email}}</td>	  
+	  <td>									
+	  <p>Кол-во:{{ item.license }}</p>
+	  <p class="text-danger">Red:{{ item.red }}</p>
+	  <p class="text-success">Green:{{ item.green }}</p>
+	  <p class="text-secondary">Grey:{{ item.grey }}</p>
+	   </td>
+	   <td>									
+	   {% if item.proc <= 30 %}
+	   <p class="text-success">NO PROBLEM</p>
+	   {% endif %}
+	   {% if item.proc >= 30 %}
+	   <p class="text-danger">PROBLEM</p>
+	   <a href="{% url 'sendmail' item.customer__company %}">Сообщить о проблеме </a>
+	   {% endif %}</td>
+    </tr>
+	{% endfor %}
+	{% endfor %}
+  </tbody>
+</table>
+
+                            
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<center><h1>Добавил информацию о лицензиях</h1></center>
+<br>
+<ul>
+{% for lic in lic %}
+<li>Лицензия:{{lic}}</li>
+{% endfor %}
+</ul>
+<br>
+
+
+
+
+
+{% endblock %}

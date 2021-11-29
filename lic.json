@@ -1,0 +1,597 @@
+[
+    {
+        "date": "date, format: 29.11.21",
+        "data": [
+            {
+                "customer": "Customer0",
+                "counts": {
+                    "license": 107,
+                    "red": 32,
+                    "green": 68
+                }
+            },
+            {
+                "customer": "Customer1",
+                "counts": {
+                    "license": 198,
+                    "red": 78,
+                    "green": 26
+                }
+            },
+            {
+                "customer": "Customer2",
+                "counts": {
+                    "license": 167,
+                    "red": 114,
+                    "green": 12
+                }
+            },
+            {
+                "customer": "Customer3",
+                "counts": {
+                    "license": 138,
+                    "red": 125,
+                    "green": 5
+                }
+            },
+            {
+                "customer": "Customer4",
+                "counts": {
+                    "license": 120,
+                    "red": 57,
+                    "green": 36
+                }
+            },
+            {
+                "customer": "Customer5",
+                "counts": {
+                    "license": 144,
+                    "red": 116,
+                    "green": 23
+                }
+            },
+            {
+                "customer": "Customer6",
+                "counts": {
+                    "license": 151,
+                    "red": 88,
+                    "green": 40
+                }
+            },
+            {
+                "customer": "Customer7",
+                "counts": {
+                    "license": 123,
+                    "red": 11,
+                    "green": 82
+                }
+            },
+            {
+                "customer": "Customer8",
+                "counts": {
+                    "license": 163,
+                    "red": 122,
+                    "green": 6
+                }
+            },
+            {
+                "customer": "Customer9",
+                "counts": {
+                    "license": 188,
+                    "red": 117,
+                    "green": 35
+                }
+            }
+        ]
+    },
+    {
+        "date": "date, format: 28.11.21",
+        "data": [
+            {
+                "customer": "Customer0",
+                "counts": {
+                    "license": 126,
+                    "red": 75,
+                    "green": 30
+                }
+            },
+            {
+                "customer": "Customer1",
+                "counts": {
+                    "license": 177,
+                    "red": 115,
+                    "green": 3
+                }
+            },
+            {
+                "customer": "Customer2",
+                "counts": {
+                    "license": 102,
+                    "red": 7,
+                    "green": 36
+                }
+            },
+            {
+                "customer": "Customer3",
+                "counts": {
+                    "license": 142,
+                    "red": 34,
+                    "green": 4
+                }
+            },
+            {
+                "customer": "Customer4",
+                "counts": {
+                    "license": 146,
+                    "red": 136,
+                    "green": 8
+                }
+            },
+            {
+                "customer": "Customer5",
+                "counts": {
+                    "license": 158,
+                    "red": 130,
+                    "green": 10
+                }
+            },
+            {
+                "customer": "Customer6",
+                "counts": {
+                    "license": 173,
+                    "red": 99,
+                    "green": 18
+                }
+            },
+            {
+                "customer": "Customer7",
+                "counts": {
+                    "license": 195,
+                    "red": 193,
+                    "green": 1
+                }
+            },
+            {
+                "customer": "Customer8",
+                "counts": {
+                    "license": 156,
+                    "red": 64,
+                    "green": 17
+                }
+            },
+            {
+                "customer": "Customer9",
+                "counts": {
+                    "license": 199,
+                    "red": 101,
+                    "green": 17
+                }
+            }
+        ]
+    },
+    {
+        "date": "date, format: 27.11.21",
+        "data": [
+            {
+                "customer": "Customer0",
+                "counts": {
+                    "license": 133,
+                    "red": 58,
+                    "green": 29
+                }
+            },
+            {
+                "customer": "Customer1",
+                "counts": {
+                    "license": 199,
+                    "red": 106,
+                    "green": 77
+                }
+            },
+            {
+                "customer": "Customer2",
+                "counts": {
+                    "license": 187,
+                    "red": 82,
+                    "green": 103
+                }
+            },
+            {
+                "customer": "Customer3",
+                "counts": {
+                    "license": 153,
+                    "red": 131,
+                    "green": 4
+                }
+            },
+            {
+                "customer": "Customer4",
+                "counts": {
+                    "license": 151,
+                    "red": 44,
+                    "green": 89
+                }
+            },
+            {
+                "customer": "Customer5",
+                "counts": {
+                    "license": 178,
+                    "red": 158,
+                    "green": 0
+                }
+            },
+            {
+                "customer": "Customer6",
+                "counts": {
+                    "license": 174,
+                    "red": 108,
+                    "green": 63
+                }
+            },
+            {
+                "customer": "Customer7",
+                "counts": {
+                    "license": 114,
+                    "red": 27,
+                    "green": 52
+                }
+            },
+            {
+                "customer": "Customer8",
+                "counts": {
+                    "license": 169,
+                    "red": 165,
+                    "green": 2
+                }
+            },
+            {
+                "customer": "Customer9",
+                "counts": {
+                    "license": 129,
+                    "red": 122,
+                    "green": 3
+                }
+            }
+        ]
+    },
+    {
+        "date": "date, format: 26.11.21",
+        "data": [
+            {
+                "customer": "Customer0",
+                "counts": {
+                    "license": 131,
+                    "red": 11,
+                    "green": 70
+                }
+            },
+            {
+                "customer": "Customer1",
+                "counts": {
+                    "license": 145,
+                    "red": 76,
+                    "green": 13
+                }
+            },
+            {
+                "customer": "Customer2",
+                "counts": {
+                    "license": 169,
+                    "red": 133,
+                    "green": 31
+                }
+            },
+            {
+                "customer": "Customer3",
+                "counts": {
+                    "license": 187,
+                    "red": 82,
+                    "green": 26
+                }
+            },
+            {
+                "customer": "Customer4",
+                "counts": {
+                    "license": 118,
+                    "red": 32,
+                    "green": 73
+                }
+            },
+            {
+                "customer": "Customer5",
+                "counts": {
+                    "license": 102,
+                    "red": 0,
+                    "green": 45
+                }
+            },
+            {
+                "customer": "Customer6",
+                "counts": {
+                    "license": 198,
+                    "red": 91,
+                    "green": 83
+                }
+            },
+            {
+                "customer": "Customer7",
+                "counts": {
+                    "license": 155,
+                    "red": 85,
+                    "green": 9
+                }
+            },
+            {
+                "customer": "Customer8",
+                "counts": {
+                    "license": 167,
+                    "red": 90,
+                    "green": 7
+                }
+            },
+            {
+                "customer": "Customer9",
+                "counts": {
+                    "license": 154,
+                    "red": 146,
+                    "green": 1
+                }
+            }
+        ]
+    },
+    {
+        "date": "date, format: 25.11.21",
+        "data": [
+            {
+                "customer": "Customer0",
+                "counts": {
+                    "license": 100,
+                    "red": -17,
+                    "green": 37
+                }
+            },
+            {
+                "customer": "Customer1",
+                "counts": {
+                    "license": 193,
+                    "red": 100,
+                    "green": 18
+                }
+            },
+            {
+                "customer": "Customer2",
+                "counts": {
+                    "license": 183,
+                    "red": 154,
+                    "green": 11
+                }
+            },
+            {
+                "customer": "Customer3",
+                "counts": {
+                    "license": 124,
+                    "red": 43,
+                    "green": 30
+                }
+            },
+            {
+                "customer": "Customer4",
+                "counts": {
+                    "license": 119,
+                    "red": 33,
+                    "green": 49
+                }
+            },
+            {
+                "customer": "Customer5",
+                "counts": {
+                    "license": 113,
+                    "red": 95,
+                    "green": 1
+                }
+            },
+            {
+                "customer": "Customer6",
+                "counts": {
+                    "license": 131,
+                    "red": 31,
+                    "green": 37
+                }
+            },
+            {
+                "customer": "Customer7",
+                "counts": {
+                    "license": 116,
+                    "red": 63,
+                    "green": 41
+                }
+            },
+            {
+                "customer": "Customer8",
+                "counts": {
+                    "license": 130,
+                    "red": 68,
+                    "green": 62
+                }
+            },
+            {
+                "customer": "Customer9",
+                "counts": {
+                    "license": 115,
+                    "red": 86,
+                    "green": 20
+                }
+            }
+        ]
+    },
+    {
+        "date": "date, format: 24.11.21",
+        "data": [
+            {
+                "customer": "Customer0",
+                "counts": {
+                    "license": 177,
+                    "red": 76,
+                    "green": 30
+                }
+            },
+            {
+                "customer": "Customer1",
+                "counts": {
+                    "license": 120,
+                    "red": 31,
+                    "green": 27
+                }
+            },
+            {
+                "customer": "Customer2",
+                "counts": {
+                    "license": 180,
+                    "red": 143,
+                    "green": 37
+                }
+            },
+            {
+                "customer": "Customer3",
+                "counts": {
+                    "license": 132,
+                    "red": 90,
+                    "green": 4
+                }
+            },
+            {
+                "customer": "Customer4",
+                "counts": {
+                    "license": 111,
+                    "red": 44,
+                    "green": 11
+                }
+            },
+            {
+                "customer": "Customer5",
+                "counts": {
+                    "license": 152,
+                    "red": 120,
+                    "green": 16
+                }
+            },
+            {
+                "customer": "Customer6",
+                "counts": {
+                    "license": 184,
+                    "red": 184,
+                    "green": 0
+                }
+            },
+            {
+                "customer": "Customer7",
+                "counts": {
+                    "license": 182,
+                    "red": 145,
+                    "green": 6
+                }
+            },
+            {
+                "customer": "Customer8",
+                "counts": {
+                    "license": 139,
+                    "red": 96,
+                    "green": 19
+                }
+            },
+            {
+                "customer": "Customer9",
+                "counts": {
+                    "license": 120,
+                    "red": 105,
+                    "green": 8
+                }
+            }
+        ]
+    },
+    {
+        "date": "date, format: 23.11.21",
+        "data": [
+            {
+                "customer": "Customer0",
+                "counts": {
+                    "license": 172,
+                    "red": 82,
+                    "green": 24
+                }
+            },
+            {
+                "customer": "Customer1",
+                "counts": {
+                    "license": 155,
+                    "red": 43,
+                    "green": 13
+                }
+            },
+            {
+                "customer": "Customer2",
+                "counts": {
+                    "license": 109,
+                    "red": 35,
+                    "green": 13
+                }
+            },
+            {
+                "customer": "Customer3",
+                "counts": {
+                    "license": 195,
+                    "red": 106,
+                    "green": 63
+                }
+            },
+            {
+                "customer": "Customer4",
+                "counts": {
+                    "license": 135,
+                    "red": 26,
+                    "green": 75
+                }
+            },
+            {
+                "customer": "Customer5",
+                "counts": {
+                    "license": 140,
+                    "red": 110,
+                    "green": 0
+                }
+            },
+            {
+                "customer": "Customer6",
+                "counts": {
+                    "license": 151,
+                    "red": 124,
+                    "green": 6
+                }
+            },
+            {
+                "customer": "Customer7",
+                "counts": {
+                    "license": 186,
+                    "red": 141,
+                    "green": 26
+                }
+            },
+            {
+                "customer": "Customer8",
+                "counts": {
+                    "license": 175,
+                    "red": 137,
+                    "green": 15
+                }
+            },
+            {
+                "customer": "Customer9",
+                "counts": {
+                    "license": 117,
+                    "red": 91,
+                    "green": 17
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<center><h1>Добавил заказчиков</h1></center>
+<br>
+<ul>
+{% for company in company %}
+<li>Заказчик:{{company}}</li>
+{% endfor %}
+</ul>
+<br>
+
+
+
+
+{% endblock %}
