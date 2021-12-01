@@ -46,7 +46,6 @@ def addcustomer(request):
 			else:
 				# massage = "Добавить", i['customer']
 				cre = Customer.objects.create(company=i['customer'], firstname=i['first name'], lastname=i['last name'], email=i['email'])
-	f.close()
 	data = {"company": company}
 	return render(request, "addcustomer.html", context=data)
 
@@ -57,7 +56,6 @@ def addlic(request):
 		for i in lic:
 			for m in range(len(i['data'])):
 				dt = time.strptime(i['date'][14:], '%d.%m.%y')
-				# print(time.strftime('%Y-%m-%d', dt))
 				test = Customer.objects.filter(company=i['data'][m]['customer']).values('pk')
 				dates = i['date'][14:]
 				id_pk = test[0]['pk']
@@ -68,7 +66,6 @@ def addlic(request):
 				else:
 					crelic = License.objects.create(customer_id=id_pk, license=i['data'][m]['counts']['license'], red=i['data'][m]['counts']['red'], green=i['data'][m]['counts']['green'], grey=grey, date=time.strftime('%Y-%m-%d', dt))
 					# massage = "Добавить"
-	f.close()
 	data = {"lic": lic}
 	return render(request, "addlic.html", context=data)
 
@@ -99,8 +96,7 @@ def create(request):
 		os.remove(custfile)
 	except OSError:
 		pass
-	
-	
+		
 	cust = {}
 	cust_list = []
 	for i in range(10):
@@ -113,13 +109,7 @@ def create(request):
 	
 	with open(custfile, 'a', encoding='utf8') as f:
 		json.dump(cust_list, f, indent=4)
-	f.close()
-	
-	
-
-	
-	
-	
+		
 	list_read = []
 	with open('comp.json') as f:
 		company = json.load(f)
@@ -127,9 +117,6 @@ def create(request):
 			comp = i['customer']
 			list_read.append(comp)
 			
-	
-
-	
 	licfile = 'lic.json'
 	try:
 		os.remove(licfile)
@@ -140,8 +127,6 @@ def create(request):
 	start = datetime.datetime.strptime(start, "%d.%m.%Y")
 	end = start + datetime.timedelta(days=7)
 	date_generated = [start - datetime.timedelta(days=x) for x in range(0, (end-start).days)]
-	
-	
 	
 	tests = {}
 	list =[]
@@ -157,14 +142,9 @@ def create(request):
 			rand3 = rand2 - randint(0, rand2)
 			data = {'customer': list_read[e], 'counts': {'license': rand, 'red': rand1, 'green': rand3}}
 			lists.append(data)
-		tests['data'] = lists
-		# tests['data'] = {'customer': list_comp[0], 'counts': {'license': license[0], 'red': red[0], 'green': green[0]}}, {'customer': list_comp[1], 'counts': {'license': license[1], 'red': red[1], 'green': green[1]}}, {'customer': list_comp[2], 'counts': {'license': license[2], 'red': red[2], 'green': green[2]}}
-		
+		tests['data'] = lists		
 		list.append(tests)
 	
 	with open(licfile, 'a', encoding='utf8') as f:
 		json.dump(list, f, indent=4)
-	
-	# print(list)
-	f.close()
 	return redirect('home')
